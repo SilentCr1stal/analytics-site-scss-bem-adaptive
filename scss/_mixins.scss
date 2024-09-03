@@ -4,3 +4,12 @@
   box-sizing: border-box;
   margin: 0 auto;
 }
+@mixin btn($bd-color, $bg-color, $bd-radius, $color, $font-size, $p-top, $p-bottom) {
+  border: 1px solid $bd-color;
+  background-color: $bg-color;
+  border-radius: $bd-radius;
+  color: $color;
+  font-size: $font-size;
+  padding: $p-top $p-bottom;
+  cursor: pointer;
+}

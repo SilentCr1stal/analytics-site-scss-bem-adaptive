@@ -1,3 +1,51 @@
 .intro-analytics {
-  background: $black;
+  background: $background-dark-blue;
+  padding: 50px 0 0 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+
+  nav {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin: 0 78px 0 0;
+    text-decoration: none;
+
+    img {
+      margin: 0 13px 0 0;
+    }
+
+    p {
+      font-size: 20px;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+    }
+    &-item {
+      margin: 0 36px 0 0;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__buttons {
+    &--transparent {
+      @include btn(transparent, transparent, 68px, $gray, 16px, 10px, 53px)
+    }
+    &--circled {
+      @include btn($light-gray, transparent, 68px, $gray, 16px, 10px, 53px)
+    }
+  }
 }

@@ -90,7 +90,57 @@ img {
 }
 
 .intro-analytics {
-  background: #000;
+  background: #172755;
+  padding: 50px 0 0 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header nav {
+  flex-grow: 1;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin: 0 78px 0 0;
+  text-decoration: none;
+}
+.header__logo img {
+  margin: 0 13px 0 0;
+}
+.header__logo p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.header__menu-list {
+  display: flex;
+}
+.header__menu-item {
+  margin: 0 36px 0 0;
+}
+.header__menu-item a {
+  text-decoration: none;
+}
+.header__buttons--transparent {
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 68px;
+  color: #8794ba;
+  font-size: 16px;
+  padding: 10px 53px;
+  cursor: pointer;
+}
+.header__buttons--circled {
+  border: 1px solid #f8f9ff;
+  background-color: transparent;
+  border-radius: 68px;
+  color: #8794ba;
+  font-size: 16px;
+  padding: 10px 53px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
