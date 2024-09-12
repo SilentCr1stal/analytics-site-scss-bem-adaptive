@@ -315,6 +315,7 @@ img {
 .pricing-plans {
   padding: 280px 0 100px 0;
   position: relative;
+  background: #172755;
 }
 .pricing-plans::after {
   content: "";
@@ -439,6 +440,54 @@ img {
   font-size: 16px;
   padding: 15px 80px;
   cursor: pointer;
+}
+
+.footer-menu {
+  background: #172755;
+}
+.footer-menu__wrapper {
+  border-top: 1px solid #2a407c;
+  padding: 63px 0 103px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu__logo {
+  display: flex;
+  align-items: center;
+}
+.footer-menu__logo img {
+  margin: 0 10px 0 0;
+}
+.footer-menu__logo p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.footer-menu__list {
+  width: 294px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-menu__link {
+  text-decoration: none;
+}
+.footer-menu__links {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
+}
+.footer-menu__links a:nth-child(1) .footer-menu__link-icon {
+  width: 10px;
+  height: 20px;
+}
+.footer-menu__links a:nth-child(2) .footer-menu__link-icon {
+  width: 25px;
+  height: 20px;
+}
+.footer-menu__links a:nth-child(3) .footer-menu__link-icon {
+  width: 21px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
