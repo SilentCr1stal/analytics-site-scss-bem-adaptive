@@ -4,7 +4,7 @@
   // position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     top: 0;
@@ -18,7 +18,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     // top: 0;
@@ -69,11 +69,11 @@
     }
   }
 
-  &__buttons {
-    &--transparent {
+  &__btns {
+    .header__btn--transparent {
       @include btn(transparent, transparent, 68px, $gray, 16px, 10px, 53px);
     }
-    &--circled {
+    .header__btn--circled {
       @include btn($light-gray, transparent, 68px, $gray, 16px, 10px, 53px);
     }
   }
@@ -86,50 +86,50 @@
   &__info {
     max-width: 550px;
     padding: 0 80px 0 0;
+  }
 
-    &-title {
-      position: relative;
-      z-index: 1;
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 120%;
-      color: $white;
-      margin: 0 0 15px 0;
+  &-title {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: $white;
+    margin: 0 0 15px 0;
 
-      &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: -345px;
-        left: 98%;
-        width: 1000px;
-        height: 1000px;
-        background: url("../../assets/icons/logo-light-gray.svg") no-repeat;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: -400px;
-        left: -180px;
-        width: 720px;
-        height: 720px;
-        background: url("../../assets/icons/logo-light-gray-2.svg") no-repeat;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -345px;
+      left: 98%;
+      width: 1000px;
+      height: 1000px;
+      background: url("../../assets/icons/logo-light-gray.svg") no-repeat;
     }
 
-    &-text {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
-      color: $gray;
-      margin: 0 0 50px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -400px;
+      left: -180px;
+      width: 720px;
+      height: 720px;
+      background: url("../../assets/icons/logo-light-gray-2.svg") no-repeat;
     }
+  }
 
-    &-btn {
-      @include btn(transparent, $pink, 68px, $white, 16px, 15px, 80px);
-    }
+  &-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $gray;
+    margin: 0 0 50px 0;
+  }
+
+  &-btn {
+    @include btn(transparent, $pink, 68px, $white, 16px, 15px, 80px);
   }
 
   &__pictures {
