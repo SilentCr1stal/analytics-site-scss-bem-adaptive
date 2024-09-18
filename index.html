@@ -9,13 +9,13 @@
   <body>
     <div class="container">
       <section class="intro-analytics">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
           <header class="header">
             <a href="" class="header__logo">
               <img src="/assets/icons/logo.svg" alt="logo" class="img__logo" />
               <p class="p__logo">Analytics</p>
             </a>
-            <nav class="header__menu">
+            <nav class="header__menu header__menu--adaptive">
               <ul class="header__menu-list">
                 <li class="header__menu-item">
                   <a href="#" class="a__list">Product</a>
@@ -36,7 +36,32 @@
             </nav>
             <div class="header__btns">
               <button class="header__btn--transparent">Sign in</button>
-              <button class="header__btn--circled">Sign Up</button>
+              <button class="header__btn--circled header__menu--adaptive">
+                Sign Up
+              </button>
+            </div>
+
+            <div class="header-menu-btn">
+              <input type="checkbox" />
+              <nav class="header-menu header-menu--side">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Products</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Pricing</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">FAQ</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Blog</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Analytics</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </header>
           <div class="dashboard">
@@ -225,13 +250,25 @@
           </ul>
           <div class="footer-menu__links">
             <a href="/">
-              <img class="footer-menu__link-icon" src="./assets/icons/Facebook.svg" alt="facebook" />
+              <img
+                class="footer-menu__link-icon"
+                src="./assets/icons/Facebook.svg"
+                alt="facebook"
+              />
             </a>
             <a href="/">
-              <img class="footer-menu__link-icon" src="./assets/icons/Twitter.svg" alt="twitter" />
+              <img
+                class="footer-menu__link-icon"
+                src="./assets/icons/Twitter.svg"
+                alt="twitter"
+              />
             </a>
             <a href="/">
-              <img class="footer-menu__link-icon" src="./assets/icons/Instagram.svg" alt="instagram" />
+              <img
+                class="footer-menu__link-icon"
+                src="./assets/icons/Instagram.svg"
+                alt="instagram"
+              />
             </a>
           </div>
         </div>

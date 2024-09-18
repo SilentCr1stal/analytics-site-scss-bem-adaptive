@@ -129,7 +129,13 @@
   }
 
   &-btn {
+    position: relative;
+    z-index: 1;
     @include btn(transparent, $pink, 68px, $white, 16px, 15px, 80px);
+    transition: all .5s;
+    &:hover {
+      @include btn($pink, transparent, 68px, $pink, 16px, 15px, 80px);
+    }
   }
 
   &__pictures {
@@ -152,6 +158,16 @@
       height: 550px;
       border-radius: 30px;
       z-index: -1;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .intro-analytics {
+    &::after,
+    &::before {
+      clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
     }
   }
 }
