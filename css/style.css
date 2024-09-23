@@ -119,6 +119,8 @@ img {
 }
 
 .header {
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
 }
@@ -256,6 +258,36 @@ img {
 @media screen and (max-width: 1200px) {
   .intro-analytics::after, .intro-analytics::before {
     clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+  }
+  .wrap-padding {
+    padding: 0 15px;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .header__logo {
+    flex-grow: 1;
+  }
+  .header-menu-btn {
+    display: block;
+    position: relative;
+  }
+  .header-menu-btn input {
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+    width: 24px;
+    height: 24px;
+  }
+  .header-menu-btn input::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    background: url("/assets/icons/menu-icon.svg") no-repeat;
   }
 }
 .main-features {
